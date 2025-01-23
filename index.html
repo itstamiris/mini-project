@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.ibb.co/GP3dyzw/IMG-6199.jpg">
+    <title>Quiz-html</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header__title">
+                <a class="header__link" target="_blank" href="">By Tamiris and Adiya</a>  
+            </h1>
+        </header>
+
+        <div class="timer">
+            <h1 id="timer-inner"></h1>
+        </div>
+
+        <div id="score-display">
+            Your score: 0
+        </div>
+
+        <main class="main">
+            
+            <div class="warning hidden">
+                There is no questions, <br> add one!
+            </div>
+
+            <div class="quiz hidden">
+                <h2 class="quiz__header">Test how well you studied in the 2 term😁😁😁</h2>
+                <div class="quiz__progress">
+                    <div class="quiz__progress-inner"></div>
+                </div>
+                <div class="quiz__content">
+                    <h3 class="quiz__title">
+
+                    </h3>
+                    <ul class="quiz__list">
+                    
+                    </ul>
+                </div>
+                <div class="quiz__footer">
+                    <div class="quiz__total">
+                        
+                    </div>
+                    <button class="quiz__next-btn">Next</button>
+                </div>
+            </div>
+
+            <div class="result hidden">
+                <div class="result__img">
+                    <img src="./img/the-end.png" alt="The end">
+                </div>
+                <div class="result__title">You finished the Test!</div>
+                <div class="result__text">
+
+                </div>
+                <div class="result__btn">
+                    <a class="result__restart" href="/">Start again</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- <footer class="footer">
+            Подключайся к нам в телеграмм <a class="footer__link" target="_blank" href="https://t.me/frontend_case">@frontend_case</a>.
+            Помощь новичкам!
+            Будем развиваться во фронтенд разработке вместе :
+        </footer> -->
+    </div>
+
+    <div id="confetti"></div>
+    <audio id="confetti-sound" src="./music/click-buttons-ui-menu-sounds-effects-button-7-203601.mp3"></audio>
+    <audio id="pie-sound" src="./music/explosion-91872.mp3"></audio>
+    <div id="pie"></div>
+
+    <script src="./js/questions.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
